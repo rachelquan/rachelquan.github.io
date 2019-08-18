@@ -14,3 +14,12 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 # Grab the entire URL if the 2 conditions above
 # L (rule will run only if the rule above are satisfied)
 RewriteRule ^(.*)$ $1.html [NC,L]
+
+RewriteRule https://rachelquan.github.io/index.html / [NC,L] 
+RewriteRule https://rachelquan.github.io/code/code.html /code [NC,L]
+RewriteRule https://rachelquan.github.io/design/design.html /design [NC,L]
+RewriteRule https://rachelquan.github.io/about/about.html /about [NC,L]
+
+RewriteRule https://rachelquan.github.io/design/cutie.html /design/cutie [NC,L]
+RewriteRule https://rachelquan.github.io/design/citrus.html /design/citrus [NC,L]
+RewriteRule https://rachelquan.github.io/design/rose.html /design/rose [NC,L]
