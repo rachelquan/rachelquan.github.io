@@ -1,19 +1,12 @@
-# create a code that will run on our server before it loads on our website aka config file for our server
-
-# url rewrite
-
-RewriteEngine on
-
-# Does not apply to folders that exist
+#example.com/page will display the contents of example.com/page.html
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L,QSA]
 
-# Check for file in directory with .html extension
-
-RewriteCond %{REQUEST_FILENAME}\.html -f
-
-# Grab the entire URL if the 2 conditions above
-# L (rule will run only if the rule above are satisfied)
-RewriteRule ^(.*)$ $1.html [NC,L]
+#301 from example.com/page.html to example.com/page
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
 
 RewriteRule https://rachelquan.github.io/index.html / [NC,L] 
 RewriteRule https://rachelquan.github.io/code/code.html /code [NC,L]
