@@ -4,5 +4,5 @@ My personal portfolio as of 7/2019! (✿◠‿◠) Currently redesigning it thou
 
  ## Tools
   
- * **Frontend:** HTML, CSS, JavaScript, jQuery
+ * **Frontend:** HTML, CSS, JavaScript
  * **Design:** Figma
