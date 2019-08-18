@@ -115,18 +115,6 @@ a:hover {
     color: #5FA8D3;
 }
 
-.fa-github:before {
-    font-size: 18px;
-}
-
-.fa-linkedin-in:before {
-    font-size: 18px;
-}
-
-.fa-envelope:before {
-    font-size: 18px;
-}
-
 /* Project Page */
 .uk-card-body {
     text-align: center;
